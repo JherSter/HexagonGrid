@@ -18,6 +18,7 @@ public class HexagonGrid : MonoBehaviour {
 		for (int z = 0, i = 0; z < height; z++) {
 			for (int x = 0; x < height; x++) {
 				CreateHex (z, x, i++);
+			
 			}
 		}
 	}
@@ -34,6 +35,7 @@ public class HexagonGrid : MonoBehaviour {
 		HexCell cell = cells [i] = Instantiate<HexCell> (cellPrefab);
 		cell.transform.SetParent (transform, false);
 		cell.transform.localPosition = position;
+
 	}
 }
 
